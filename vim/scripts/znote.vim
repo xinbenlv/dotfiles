@@ -14,7 +14,7 @@ endif
 syn case match
 
 " Keywords
-syn keyword znoteKeyword TODO ISSUE REPRODUCE SOLUTION DONE TARGETDONE
+syn keyword znoteKeyword TODO ISSUE REPRODUCE SOLUTION DONE TARGETDONE IDEA
 syn keyword znoteSuperHighlight TARGET
 syn keyword znoteSuperHappy ACHIEVEMENT
 
