@@ -61,7 +61,7 @@ hi def link znoteSuperHighlight SuperHighlight
 hi SuperHappy term=standout ctermfg=2 ctermbg=0 guifg=Green guibg=Black
 hi def link znoteSuperHappy SuperHappy
 
-set foldcolumn=1
+set foldcolumn=0
 setlocal foldmethod=expr
 setlocal foldexpr=(getline(v:lnum)=~'^$')?-1:((indent(v:lnum)<indent(v:lnum+1))?('>'.indent(v:lnum+1)):indent(v:lnum))
 set fillchars=fold:\ "(there's a space after that \)
