@@ -1,3 +1,6 @@
 [submodule "powerline-bash"]
 	path = powerline-bash
 	url = https://github.com/xinbenlv/powerline-bash.git
+[submodule "vim/bundle/vundle"]
+	path = vim/bundle/vundle
+	url = https://github.com/gmarik/vundle.git
