@@ -7,9 +7,8 @@
 ;; Set region background colour
 (set-face-background 'region "blue")
 
-;; Set emacs background colour
-(set-background-color "black")
-(set-foreground-color "white")
+(add-to-list 'custom-theme-load-path "~/dotfiles/emacs-color-theme-solarized")
+(load-theme 'solarized-dark t)
 
 ;; Enable org-mode  
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))

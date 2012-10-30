@@ -7,3 +7,9 @@
 [submodule "tmux-powerline"]
 	path = tmux-powerline
 	url = git://github.com/erikw/tmux-powerline.git
+[submodule "solarized"]
+	path = solarized
+	url = https://github.com/altercation/solarized
+[submodule "emacs-color-theme-solarized"]
+	path = emacs-color-theme-solarized
+	url = git://github.com/sellout/emacs-color-theme-solarized.git
