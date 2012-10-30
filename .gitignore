@@ -1,6 +1,7 @@
 # Vim cache
 vim/view/
 vim/vim
+vim/bundle/
 *.py[co]
 
 # Packages
