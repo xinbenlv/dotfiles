@@ -7,12 +7,12 @@
 ;; Set region background colour
 (set-face-background 'region "blue")
 
-;; Set emacs background colour
-(set-background-color "black")
-(set-foreground-color "white")
+(add-to-list 'custom-theme-load-path "~/dotfiles/emacs-color-theme-solarized")
+(load-theme 'solarized-dark t)
 
 ;; Enable org-mode  
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
+(add-to-list 'load-path "~/.emacs.d/lisp/")
 (global-set-key "\C-cl" 'org-store-link)
 (global-set-key "\C-cc" 'org-capture)
 (global-set-key "\C-ca" 'org-agenda)
@@ -47,3 +47,8 @@ Uses `current-date-time-format' for the formatting the date/time."
 
 (global-set-key "\C-cd" 'insert-current-date)
 (global-set-key "\C-ct" 'insert-current-time)
+ 
+
+(set-keyboard-coding-system nil)
+
+
