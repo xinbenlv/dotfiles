@@ -1,14 +1,12 @@
-;; ========= Set colours ==========
+;; Set package
+(require 'package)
+(add-to-list 'package-archives 
+    '("marmalade" .
+      "http://marmalade-repo.org/packages/"))
+(package-initialize)
+(add-to-list 'package-archives
+    '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
-;; Set cursor and mouse-pointer colours
-(set-cursor-color "red")
-(set-mouse-color "goldenrod")
-
-;; Set region background colour
-(set-face-background 'region "blue")
-
-(add-to-list 'custom-theme-load-path "~/dotfiles/emacs-color-theme-solarized")
-(load-theme 'solarized-dark t)
 
 ;; Enable org-mode  
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
@@ -52,3 +50,25 @@ Uses `current-date-time-format' for the formatting the date/time."
 (set-keyboard-coding-system nil)
 
 
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ansi-color-names-vector ["#002b36" "#dc322f" "#859900" "#b58900" "#268bd2" "#d33682" "#2aa198" "#839496"])
+ '(ansi-term-color-vector [unspecific "#586e75" "#dc322f" "#859900" "#b58900" "#268bd2" "#d33682" "#2aa198" "#002b36"])
+ '(custom-safe-themes (quote ("d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
+ '(fci-rule-color "#073642")
+ '(highlight-changes-colors (quote ("#d33682" "#6c71c4")))
+ '(highlight-tail-colors (quote (("#073642" . 0) ("#546E00" . 20) ("#00736F" . 30) ("#00629D" . 50) ("#7B6000" . 60) ("#8B2C02" . 70) ("#93115C" . 85) ("#073642" . 100)))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+;; ========= Set colours ==========
+;;(require 'color-theme)
+(add-to-list 'custom-theme-load-path "~/dotfiles/emacs-color-theme-solarized")
+;;(add-to-list 'custom-theme-load-path "~/dotfiles/solarized/emacs-colors-solarized")
+(load-theme 'solarized-dark t)
