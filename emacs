@@ -1,3 +1,6 @@
+(setq org-agenda-files (list "~/nfs/www/notes/zzn-engnote.org"))
+
+
 ;; Set package
 (require 'package)
 (add-to-list 'package-archives 

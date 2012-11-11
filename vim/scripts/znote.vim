@@ -85,6 +85,9 @@ nnoremap <F5> "=strftime("%F")<CR>P
 inoremap <F5> <C-O>"=strftime("%F")<CR>P
 nnoremap <F6> "=strftime("%R")<CR>P
 inoremap <F6> <C-O>"=strftime("%R")<CR>P
+nnoremap <F4> "=strftime("%F %T")<CR>P
+inoremap <F4> <C-O>"=strftime("%F %T")<CR>P
+
 
 " F9 for toggle folding current level
 inoremap <F9> <C-O>za
