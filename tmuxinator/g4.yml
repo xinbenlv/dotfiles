@@ -7,7 +7,7 @@ tabs:
   - main:
       layout: main-vertical
       panes:
-        - emacs ~/nfs/www/notes/zzn-engnote.org
+        - emacs -nw ~/nfs/www/notes/zzn-engnote.org
         - vim ~/nfs/www/notes/things.znote
         - #empty for running code
   - 20p: 
