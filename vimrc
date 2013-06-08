@@ -2,7 +2,6 @@
 " Author: Zainan Victor Zhou
 " Created: 2012-10-02
 
-
 syntax on
 " TODO what's this
 set nocompatible

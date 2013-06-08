@@ -34,6 +34,8 @@
     s = status --ignore
 [core]
     editor = vim
-    excludesfile = ~/.gitignore_global
+    excludesfile = ~/.gitignore
 
 
+[push]
+	default = simple
