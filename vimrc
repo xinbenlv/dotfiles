@@ -45,7 +45,9 @@ Bundle 'FuzzyFinder'
 Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'bling/vim-airline' 
 " ...
+
 set laststatus=2
+set t_Co=256 " force terminal to enter 256 color
 filetype plugin indent on     " required!
 
 "
