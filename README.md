@@ -17,7 +17,8 @@ dot files of mine. Finally I realize that I should have my own dot files instead
 3. make a soft link for vim and vimrc
     ln -s ~/dotfiles/vim ~/.vim # remember to back up your original ~/.bashrc
     ln -s ~/dotfiles/vimrc ~/.vimrc # remember to back up your original ~/.bashrc
-
+4. make a soft link for gitconfig
+    ln -s ~/dotfiles/gitconfig ~/.gitconfig
 
 
 
