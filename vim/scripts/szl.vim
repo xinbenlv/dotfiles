@@ -73,20 +73,19 @@ else
 endif
 
 HiLink szlComment           Comment
-HiLink szlPreCondit         PreCondit
-HiLink szlTodo              Todo
 HiLink szlConditional       Conditional
-HiLink szlRepeat            Repeat
+HiLink szlConstant          Constant
+HiLink szlIdentifier        Identifier
 HiLink szlIntrinsic         Function
 HiLink szlLabel             Label
+HiLink szlNumber            Number
+HiLink szlPreCondit         PreCondit
+HiLink szlRepeat            Repeat
+HiLink szlTodo              Todo
 HiLink szlType              Type
 HiLink szlStatement         Statement
-HiLink szlNumber            Number
 HiLink szlString            String
-HiLink szlConstant          Constant
-
 HiLink szlComposite         Structure
-HiLink szlIdentifier        Identifier
 
 delcommand HiLink
 
