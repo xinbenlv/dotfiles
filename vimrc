@@ -20,6 +20,7 @@ set showmode
 au BufRead,BufNewFile *.znote setfiletype znote
 au Filetype znote source ~/.vim/scripts/znote.vim
 
+" Support for szl
 au BufRead,BufNewFile *.szl setfiletype szl
 au Filetype szl source ~/.vim/scripts/szl.vim
 
@@ -48,11 +49,21 @@ Bundle 'FuzzyFinder'
 " non github repos
 Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'bling/vim-airline' 
-" ...
+
+" a bunch of colorschemes + a gui menu listing them
+Bundle 'flazz/vim-colorschemes'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'ColorSchemeMenuMaker'
+Bundle 'desert-warm-256'
+Bundle 'gmarik/ingretu'
+
 
 set laststatus=2
 set t_Co=256 " force terminal to enter 256 color
-au BufRead,BufNewFile *.szl set filetype=szl
+
+" Put this line to your ~/.vimrc_local to enable a theme
+" colorscheme desert-warm-256
+" colorscheme ingretu
 
 " Comment the following line this line if you wanna enable powerline fonts
 let g:airline_powerline_fonts = 1
