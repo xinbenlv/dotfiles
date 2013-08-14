@@ -49,8 +49,8 @@ Bundle 'bling/vim-airline'
 set laststatus=2
 set t_Co=256 " force terminal to enter 256 color
 
-" Remove this line if you wanna enable powerline fonts
-" let g:airline_powerline_fonts = 1
+" Comment the following line this line if you wanna enable powerline fonts
+let g:airline_powerline_fonts = 1
 
 filetype plugin indent on     " required!
 

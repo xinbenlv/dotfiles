@@ -1,3 +1,7 @@
+# If not running interactively, don't do anything
+[ -z "$PS1" ] && return
+
+
 # MacPorts Installer addition on 2012-09-03_at_00:20:36: adding an appropriate PATH variable for use with MacPorts.
 export PATH=/usr/local/bin:/opt/local/bin:/opt/local/sbin:$PATH
 
