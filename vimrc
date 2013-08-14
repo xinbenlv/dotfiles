@@ -20,6 +20,10 @@ set showmode
 au BufRead,BufNewFile *.znote setfiletype znote
 au Filetype znote source ~/.vim/scripts/znote.vim
 
+au BufRead,BufNewFile *.szl setfiletype szl
+au Filetype szl source ~/.vim/scripts/szl.vim
+
+
 " Support for vundle
  set nocompatible               " be iMproved
  filetype off                   " required!
@@ -48,12 +52,17 @@ Bundle 'bling/vim-airline'
 
 set laststatus=2
 set t_Co=256 " force terminal to enter 256 color
+au BufRead,BufNewFile *.szl set filetype=szl
 
 " Comment the following line this line if you wanna enable powerline fonts
 let g:airline_powerline_fonts = 1
 
 filetype plugin indent on     " required!
 
+" source additional source
+if filereadable(glob("~/.vimrc_local")) 
+    source ~/.vimrc_local
+endif
 "
 " Brief help
 " :BundleList          - list configured bundles
