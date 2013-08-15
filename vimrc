@@ -56,8 +56,8 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'ColorSchemeMenuMaker'
 Bundle 'desert-warm-256'
 Bundle 'gmarik/ingretu'
-
-
+Bundle 'jceb/vim-orgmode'
+Bundle 'tpope/vim-speeddating'
 set laststatus=2
 set t_Co=256 " force terminal to enter 256 color
 
