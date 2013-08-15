@@ -5,6 +5,9 @@
 # MacPorts Installer addition on 2012-09-03_at_00:20:36: adding an appropriate PATH variable for use with MacPorts.
 export PATH=/usr/local/bin:/opt/local/bin:/opt/local/sbin:$PATH
 
+# Set up term
+export TERM=screen-256color-bce
+
 # Finished adapting your PATH environment variable for use with MacPorts.
 
 # Use vi mode for editing commands
