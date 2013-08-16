@@ -41,7 +41,7 @@ ln -s ~/dotfiles/gitconfig ~/.gitconfig
 echo "Finished."
 echo "You will need to install powerline-font yourself, we recommend DejaVuSansMono"
 echo "https://github.com/Lokaltog/powerline-fonts/tree/master/DejaVuSansMono"
-
+echo "You will need to launch vim and then do :BundleInstall to finish the vundle plugin installation"
 
 
 
