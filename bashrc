@@ -6,7 +6,8 @@
 export PATH=/usr/local/bin:/opt/local/bin:/opt/local/sbin:$PATH
 
 # Set up term
-export TERM=screen-256color-bce
+export TERM=xterm-256color
+
 
 # Finished adapting your PATH environment variable for use with MacPorts.
 
