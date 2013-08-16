@@ -5,6 +5,9 @@ Author: Zainan Victor Zhou
 dot files of mine. Finally I realize that I should have my own dot files instead of using other's
 
 ## Installation
+### Automatic 
+    wget -qO- https://raw.github.com/xinbenlv/dotfiles/master/install.sh|bash
+### Manual 
 0. git clone this repository to your ~/ directory
     git clone https://github.com/xinbenlv/dotfiles.git
 1. make a soft link for bashrc
