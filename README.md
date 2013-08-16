@@ -19,11 +19,12 @@ dot files of mine. Finally I realize that I should have my own dot files instead
     ln -s ~/dotfiles/vimrc ~/.vimrc # remember to back up your original ~/.bashrc
 4. make a soft link for gitconfig
     ln -s ~/dotfiles/gitconfig ~/.gitconfig
-5. MAKE a soft link for screenrc
+5. make a soft link for screenrc
 
 6. install font
 https://github.com/Lokaltog/powerline-fonts/tree/master/DejaVuSansMono
 
+7. If you care about tmux, make a soft link for tmux.conf and tmuxinator
 
 Licensed in MIT License, but I suggest everyone to create your own dotfiles
 
