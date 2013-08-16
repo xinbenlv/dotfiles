@@ -6,8 +6,8 @@ git clone https://github.com/xinbenlv/dotfiles.git ~/dotfiles
 echo "Set up submodules"
 cd ~/dotfiles
 git submodule init
-git submodule update
 git submodule sync
+git submodule update
 
 echo "Backup old files to ~/dotfils.bak"
 
