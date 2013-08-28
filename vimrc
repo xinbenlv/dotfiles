@@ -47,7 +47,7 @@ Bundle 'tpope/vim-rails.git'
 Bundle 'L9'
 Bundle 'FuzzyFinder'
 " non github repos
-Bundle 'git://git.wincent.com/command-t.git'
+Bundle 'Command-T'
 Bundle 'bling/vim-airline' 
 
 " a bunch of colorschemes + a gui menu listing them
