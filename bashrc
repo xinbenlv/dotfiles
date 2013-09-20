@@ -127,6 +127,16 @@ _make_git_alias gs status
 export EDITOR=vim
 
 # source bashrc_local
+if [ -f ~/zznDotfilesGoogle/bashrc_google ]
+then
+    echo "Setup with ~/zznDotfilesGoogle/bashrc_google "
+    source ~/zznDotfilesGoogle/bashrc_google
+else
+    echo "~/zznDotfilesGoogle/bashrc_google not exists"
+fi
+
+
+# source bashrc_local
 if [ -f ~/.bashrc_local ]
 then
     echo "Setup with ~/.bashrc_local."
