@@ -29,9 +29,10 @@
     s = status
     cam = commit -a -m
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-    tree = log --graph --decorate --pretty=oneline --abbrev-commit
+    tree = log --graph --decorate --pretty=oneline --abbrev-commit --all
     wdiff = diff --color-words
     s = status --ignore
+    c = commit -am 'update'
 [core]
     editor = vim
     excludesfile = ~/.gitignore_global
