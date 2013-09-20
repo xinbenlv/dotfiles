@@ -4,8 +4,10 @@
 project_name: g4
 project_root: ~/
 tabs:
-  - main:
+  - notes:
       layout: main-vertical
       panes:
-        - vim ~/nfs/www/notes/zzn-engnote.org
-     
+        - vim ~/nfs/notes/zzn-engnote.org
+  - screen:
+      panes:
+        - pwd

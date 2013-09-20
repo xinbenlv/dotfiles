@@ -37,6 +37,10 @@ echo "Set up gitconfig"
 mv ~/.gitconfig ~/.dotfiles.bak
 ln -s ~/dotfiles/gitconfig ~/.gitconfig
 
+echo "Set up gdbinit"
+mv ~/.gdbinit ~/.gdbinit.bak
+ln -s ~/dotfiles/gdbinit ~/.gdbinit
+
 
 echo "Finished."
 echo "You will need to install powerline-font yourself, we recommend DejaVuSansMono"
