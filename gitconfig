@@ -35,6 +35,8 @@
     c = commit -am 'update'
 [core]
     editor = vim
-    excludesfile = ~/.gitignore_global
+    excludesfile = ~/.gitignore
 
 
+[push]
+	default = matching

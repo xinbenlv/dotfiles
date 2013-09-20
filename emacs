@@ -2,13 +2,13 @@
 
 
 ;; Set package
-(require 'package)
-(add-to-list 'package-archives 
-    '("marmalade" .
-      "http://marmalade-repo.org/packages/"))
-(package-initialize)
-(add-to-list 'package-archives
-    '("melpa" . "http://melpa.milkbox.net/packages/") t)
+;;(require 'package)
+;;(add-to-list 'package-archives 
+;;    '("marmalade" .
+;;      "http://marmalade-repo.org/packages/"))
+;;(package-initialize)
+;;(add-to-list 'package-archives
+;;    '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
 
 ;; Enable org-mode  
@@ -72,6 +72,6 @@ Uses `current-date-time-format' for the formatting the date/time."
  )
 ;; ========= Set colours ==========
 ;;(require 'color-theme)
-(add-to-list 'custom-theme-load-path "~/dotfiles/emacs-color-theme-solarized")
+;;(add-to-list 'custom-theme-load-path "~/dotfiles/emacs-color-theme-solarized")
 ;;(add-to-list 'custom-theme-load-path "~/dotfiles/solarized/emacs-colors-solarized")
-(load-theme 'solarized-dark t)
+;;(load-theme 'solarized-dark t)

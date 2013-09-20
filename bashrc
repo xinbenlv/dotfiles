@@ -1,5 +1,13 @@
+# If not running interactively, don't do anything
+[ -z "$PS1" ] && return
+
+
 # MacPorts Installer addition on 2012-09-03_at_00:20:36: adding an appropriate PATH variable for use with MacPorts.
 export PATH=/usr/local/bin:/opt/local/bin:/opt/local/sbin:$PATH
+
+# Set up term
+export TERM=xterm-256color
+
 
 # Finished adapting your PATH environment variable for use with MacPorts.
 
@@ -137,5 +145,6 @@ else
     echo "~/.bashrc_local not exisits!"
 fi
 
-
+alias ta="tmux attach"
+alias mux="tmuxinator"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
