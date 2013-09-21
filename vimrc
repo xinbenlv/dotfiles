@@ -8,6 +8,7 @@ set nocompatible
 " TODO what's this
 set sw=4 sts=4 ts=4 et hlsearch 
 
+
 " Enable filetype plugin
 filetype plugin on
 
@@ -86,7 +87,6 @@ Bundle 'gmarik/ingretu'
 Bundle 'jceb/vim-orgmode'
 Bundle 'tpope/vim-speeddating'
 Bundle 'majutsushi/tagbar'
-Bundle 'airblade/vim-gitgutter'
 set laststatus=2
 set t_Co=256 " force terminal to enter 256 color
 
