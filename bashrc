@@ -136,7 +136,7 @@ else
 fi
 
 # source tmux-powerlinerc
-if [ -f ~/.bashrc_local ]
+if [ -f ~/.tmux-powerlinerc ]
 then
     echo "Setup with ~/.tmux-powerlinerc."
     source ~/.tmux-powerlinerc

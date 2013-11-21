@@ -16,6 +16,8 @@ mkdir ~/dotfiles.bak
 echo "Set up bashrc"
 mv ~/.bashrc ~/dotfiles.bak
 ln -s ~/dotfiles/bashrc ~/.bashrc
+ln -s ~/dotfiles/bashrc ~/.bash_profile
+
 
 echo "Set up vim"
 mv ~/.vimrc ~/dotfiles.bak
