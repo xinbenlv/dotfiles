@@ -32,6 +32,9 @@ mv ~/.tmux.conf ~/dotfiles.bak
 mv ~/.tmuxinator ~/dotfiles.bak
 ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
 ln -s ~/dotfiles/tmuxinator ~/.tmuxinator
+mv ~/.tmux-powerlinerc ~/dotfiles.bak
+ln -s ~/dotfiles/tmux-powerlinerc ~/.tmux-powerlinerc
+
 
 echo "Set up gitconfig"
 mv ~/.gitconfig ~/.dotfiles.bak
