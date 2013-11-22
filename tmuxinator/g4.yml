@@ -7,7 +7,7 @@ tabs:
   - notes:
       layout: main-vertical
       panes:
-        - vim ~/nfs/notes/zzn-engnote.org
+        - vim ~/notes/zzn-engnote.org
   - screen:
       panes:
         - pwd
