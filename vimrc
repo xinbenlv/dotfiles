@@ -38,55 +38,27 @@ au Filetype szl source ~/.vim/scripts/szl.vim
 Bundle 'gmarik/vundle'
 Bundle 'L9'
 
-
-" My Bundles here:
-"
-" original repos on github
-Bundle 'tpope/vim-fugitive'
-
-" Markdown Vim Mode
-Bundle 'git://github.com/plasticboy/vim-markdown.git' 
-
-" FuzzyFinder provides convenient ways to quickly reach the buffer/file/command/bookmark/tag you want.
-Bundle 'FuzzyFinder'
-
-" The Command-T plug-in provides an extremely fast, intuitive mechanism for opening files with a minimal number of keystrokes. 
-Bundle 'Command-T'
-
 " Grammar checker for English, French, German (etc.) in Vim
-Bundle 'LanguageTool'
+" Bundle 'LanguageTool'
 
 " 
 Bundle 'bling/vim-airline'
 
 " A git command wrapper for vim
-Bundle 'tpope/vim-fugitive.git'
+" Bundle 'tpope/vim-fugitive.git'
 
 " Nerdtree: file system browser
 Bundle 'scrooloose/nerdtree' 
 " NERDTree and tabs together in Vim, painlessly
-
-Bundle 'jistr/vim-nerdtree-tabs' 
-
-" Vim plugin for intensely orgasmic commenting
-Bundle 'scrooloose/nerdcommenter'
-
-" Perform all your vim insert mode completions with Tab
-Bundle 'ervandew/supertab' 
-
-" The file manager within Vim!
-Bundle 'mbbill/VimExplorer'
-
 
 " a bunch of colorschemes + a gui menu listing them
 Bundle 'flazz/vim-colorschemes'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'ColorSchemeMenuMaker'
 Bundle 'desert-warm-256'
-Bundle 'gmarik/ingretu'
+
 Bundle 'jceb/vim-orgmode'
-Bundle 'tpope/vim-speeddating'
-Bundle 'majutsushi/tagbar'
+
 set laststatus=2
 set t_Co=256 " force terminal to enter 256 color
 
