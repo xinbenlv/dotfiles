@@ -37,14 +37,17 @@ ln -s ~/dotfiles/tmuxinator ~/.tmuxinator
 mv ~/.tmux-powerlinerc ~/dotfiles.bak
 ln -s ~/dotfiles/tmux-powerlinerc ~/.tmux-powerlinerc
 
+echo "Set up emacs"
+mv ~/.emacs ~/.dotfiles.bak
+ln -s ~/dotfiles/emacs ~/.emacs
+
+mv ~/.emacs.d ~/.dotfiles.bak
+ln -s ~/dotfiles/emacs.d ~/.emacs.d
+
 
 echo "Set up gitconfig"
 mv ~/.gitconfig ~/.dotfiles.bak
 ln -s ~/dotfiles/gitconfig ~/.gitconfig
-
-echo "Set up gdbinit"
-mv ~/.gdbinit ~/.gdbinit.bak
-ln -s ~/dotfiles/gdbinit ~/.gdbinit
 
 
 echo "Finished."
