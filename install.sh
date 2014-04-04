@@ -38,10 +38,10 @@ mv ~/.tmux-powerlinerc ~/dotfiles.bak
 ln -s ~/dotfiles/tmux-powerlinerc ~/.tmux-powerlinerc
 
 echo "Set up emacs"
-mv ~/.emacs ~/.dotfiles.bak
+mv ~/.emacs ~/dotfiles.bak
 ln -s ~/dotfiles/emacs ~/.emacs
 
-mv ~/.emacs.d ~/.dotfiles.bak
+mv ~/.emacs.d ~/dotfiles.bak
 ln -s ~/dotfiles/emacs.d ~/.emacs.d
 
 

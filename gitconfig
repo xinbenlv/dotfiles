@@ -20,8 +20,8 @@
   untracked = cyan
 
 [user]
-    name = Zainan Victor Zhou
-    email = zzn@zzn.im
+	name = Zainan Victor Zhou
+	email = xinbenlv@gmail.com
 
 [alias]
     ci = commit
