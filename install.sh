@@ -45,10 +45,11 @@ mv ~/.emacs.d ~/dotfiles.bak
 ln -s ~/dotfiles/emacs.d ~/.emacs.d
 
 
-echo "Set up gitconfig"
+echo "Set up git"
 mv ~/.gitconfig ~/.dotfiles.bak
 ln -s ~/dotfiles/gitconfig ~/.gitconfig
-
+mv ~/.gitignore ~/.gitignore
+ln -s ~/dotfiles/gitignore ~/.gitignore
 
 echo "Finished."
 echo "You will need to install powerline-font yourself, we recommend DejaVuSansMono"
