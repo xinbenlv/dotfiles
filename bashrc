@@ -148,3 +148,7 @@ fi
 alias ta="tmux attach"
 alias mux="tmuxinator"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+alias hsy_dev="git push -u dev master:gh-pages"
+alias hsy_prod="git add -A && git commit -m 'Update' && git push -u origin master master:gh-pages"
+

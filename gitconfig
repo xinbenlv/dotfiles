@@ -40,3 +40,5 @@
 
 [push]
 	default = matching
+[google]
+	lastUpdateCheck = 20150601000000
