@@ -44,3 +44,5 @@
 	tool = meld
 [diff]
 	tool = meld
+[google]
+	lastUpdateCheck = 20150601000000
