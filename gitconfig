@@ -40,9 +40,12 @@
 
 [push]
 	default = matching
+<<<<<<< HEAD
 [merge]
 	tool = meld
 [diff]
 	tool = meld
+=======
+>>>>>>> 90bb5e2a93f489ba5e6b92b8081a709be318c3eb
 [google]
 	lastUpdateCheck = 20150601000000
