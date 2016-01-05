@@ -58,6 +58,14 @@ Bundle 'ColorSchemeMenuMaker'
 Bundle 'desert-warm-256'
 
 Bundle 'jceb/vim-orgmode'
+Bundle 'tpope/vim-fugitive'
+Bundle 'dart-lang/dart-vim-plugin'
+" Set Dart SDK location"
+let g:ycm_dart_bin_folder_path = '/usr/lib/google-dartlang/bin'
+" Enable support for google3"
+let g:ycm_dart_analysis_server_flags = '--google3-package-resolution'
+
+set diffopt+=vertical
 
 set laststatus=2
 set t_Co=256 " force terminal to enter 256 color
@@ -88,4 +96,6 @@ endif
 
 nmap <F8> :TagbarToggle<CR>
 
-
+if filereadable(glob("~/.vimrc.local")) 
+  source ~/.vimrc_local
+endif

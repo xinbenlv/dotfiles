@@ -31,3 +31,5 @@ pip-log.txt
 .mr.developer.cfg
 
 emacs.d/session.*
+
+.idea

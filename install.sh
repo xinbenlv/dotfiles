@@ -36,6 +36,8 @@ ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
 ln -s ~/dotfiles/tmuxinator ~/.tmuxinator
 mv ~/.tmux-powerlinerc ~/dotfiles.bak
 ln -s ~/dotfiles/tmux-powerlinerc ~/.tmux-powerlinerc
+mv ~/.tmux ~/dotfiles.bak
+ln -s ~/dotfiles/tmux ~/.tmux
 
 echo "Set up emacs"
 mv ~/.emacs ~/dotfiles.bak
@@ -50,6 +52,7 @@ mv ~/.gitconfig ~/.dotfiles.bak
 ln -s ~/dotfiles/gitconfig ~/.gitconfig
 mv ~/.gitignore ~/.gitignore
 ln -s ~/dotfiles/gitignore ~/.gitignore
+
 
 echo "Finished."
 echo "You will need to install powerline-font yourself, we recommend DejaVuSansMono"

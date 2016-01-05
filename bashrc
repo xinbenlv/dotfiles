@@ -148,3 +148,5 @@ fi
 alias ta="tmux attach"
 alias mux="tmuxinator"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+export PATH=/usr/lib/google-dartlang/bin:${PATH}
+export PATH=/usr/lib/google-dartlang/bin:${PATH}

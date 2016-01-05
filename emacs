@@ -19,6 +19,9 @@
 ;; Turn on source code syntax highlight
 (setq org-src-fontify-natively t)
 
+(eval-after-load "org"
+  '(require 'ox-md nil t))
+
 ;; Turn on auto-load
 (global-auto-revert-mode t)
 

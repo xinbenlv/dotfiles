@@ -21,7 +21,7 @@
 
 [user]
 	name = Zainan Victor Zhou
-	email = xinbenlv@gmail.com
+	email = zzn@google.com
 
 [alias]
     ci = commit
@@ -40,3 +40,7 @@
 
 [push]
 	default = matching
+[merge]
+	tool = meld
+[diff]
+	tool = meld
