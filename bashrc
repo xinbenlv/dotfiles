@@ -148,8 +148,15 @@ fi
 alias ta="tmux attach"
 alias mux="tmuxinator"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+<<<<<<< HEAD
 export PATH=/usr/lib/google-dartlang/bin:${PATH}
 export PATH=/usr/lib/google-dartlang/bin:${PATH}
 
 alias hsy_dev="git push -u dev master:gh-pages"
 alias hsy_prod="git add -A && git commit -m 'Update' && git push -u origin master master:gh-pages"
+=======
+
+alias hsy_dev="git push -u dev master:gh-pages"
+alias hsy_prod="git add -A && git commit -m 'Update' && git push -u origin master master:gh-pages"
+
+>>>>>>> 90bb5e2a93f489ba5e6b92b8081a709be318c3eb
