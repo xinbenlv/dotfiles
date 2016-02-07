@@ -58,13 +58,12 @@ Bundle 'ColorSchemeMenuMaker'
 Bundle 'desert-warm-256'
 
 Bundle 'jceb/vim-orgmode'
-Bundle 'tpope/vim-fugitive'
 Bundle 'dart-lang/dart-vim-plugin'
 " Set Dart SDK location"
 let g:ycm_dart_bin_folder_path = '/usr/lib/google-dartlang/bin'
 " Enable support for google3"
 let g:ycm_dart_analysis_server_flags = '--google3-package-resolution'
-
+let g:loaded_youcompleteme = 1
 set diffopt+=vertical
 
 set laststatus=2

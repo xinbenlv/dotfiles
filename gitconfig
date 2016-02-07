@@ -1,4 +1,4 @@
-t ad[color]
+[color]
   branch = auto
   diff = auto
   status = auto
@@ -20,8 +20,8 @@ t ad[color]
   untracked = cyan
 
 [user]
-	name = Zainan Victor Zhou
-	email = zzn@google.com
+    name = Zainan Victor Zhou
+    email = zzn@google.com
 
 [alias]
     ci = commit
@@ -35,14 +35,14 @@ t ad[color]
     c = commit -am 'update'
 [core]
     editor = vim
-	excludesfile = /usr/local/google/home/zzn/.gitignore
-
-
+    excludesfile = /usr/local/google/home/zzn/.gitignore
 [push]
-	default = matching
+    default = matching
 [merge]
-	tool = meld
+    tool = meld
 [diff]
-	tool = meld
+    tool = meld
+
+
 [google]
-	lastUpdateCheck = 20150601000000
+    lastUpdateCheck = 20150601000000
