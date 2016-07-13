@@ -27,38 +27,42 @@ au Filetype szl source ~/.vim/scripts/szl.vim
 
 
 " Support for vundle
- set nocompatible " be iMproved
- filetype off " required!
+set nocompatible " be iMproved
+filetype off " required!
 
- set rtp+=~/.vim/bundle/vundle/
- call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
-Bundle 'L9'
+Plugin 'gmarik/vundle'
+Plugin 'L9'
 
 " Grammar checker for English, French, German (etc.) in Vim
 " Bundle 'LanguageTool'
 
 " 
-Bundle 'bling/vim-airline'
+Plugin 'bling/vim-airline'
 
 " A git command wrapper for vim
 " Bundle 'tpope/vim-fugitive.git'
 
 " Nerdtree: file system browser
-Bundle 'scrooloose/nerdtree' 
+Plugin 'scrooloose/nerdtree' 
 " NERDTree and tabs together in Vim, painlessly
 
 " a bunch of colorschemes + a gui menu listing them
-Bundle 'flazz/vim-colorschemes'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'ColorSchemeMenuMaker'
-Bundle 'desert-warm-256'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'ColorSchemeMenuMaker'
+Plugin 'desert-warm-256'
 
-Bundle 'jceb/vim-orgmode'
-Bundle 'dart-lang/dart-vim-plugin'
+Plugin 'jceb/vim-orgmode'
+Plugin 'dart-lang/dart-vim-plugin'
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+
 " Set Dart SDK location"
 let g:ycm_dart_bin_folder_path = '/usr/lib/google-dartlang/bin'
 " Enable support for google3"

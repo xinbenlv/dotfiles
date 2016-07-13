@@ -1,18 +1,24 @@
 [submodule "powerline-bash"]
-	path = powerline-bash
-	url = https://github.com/xinbenlv/powerline-bash.git
-[submodule "vim/bundle/vundle"]
-	path = vim/bundle/vundle
-	url = https://github.com/gmarik/vundle.git
+    path = powerline-bash
+    url = https://github.com/xinbenlv/powerline-bash.git
+[submodule "vim/bundle/Vundle.vim"]
+    path = vim/bundle/Vundle.vim
+    url = https://github.com/xinbenlv/Vundle.vim
 [submodule "tmux-powerline"]
-	path = tmux-powerline
-	url = https://github.com/xinbenlv/tmux-powerline.git
+    path = tmux-powerline
+    url = https://github.com/xinbenlv/tmux-powerline.git
 [submodule "solarized"]
-	path = solarized
-	url = https://github.com/altercation/solarized
+    path = solarized
+    url = https://github.com/altercation/solarized
 [submodule "emacs-color-theme-solarized"]
-	path = emacs-color-theme-solarized
-	url = git://github.com/sellout/emacs-color-theme-solarized.git
+    path = emacs-color-theme-solarized
+    url = git://github.com/sellout/emacs-color-theme-solarized.git
 [submodule "tmux/plugins/tpm"]
-	path = tmux/plugins/tpm
-	url = https://github.com/tmux-plugins/tpm
+    path = tmux/plugins/tpm
+    url = https://github.com/tmux-plugins/tpm
+[submodule "tmux/plugins/tmux-logging"]
+    path = tmux/plugins/tmux-logging
+    url = https://github.com/tmux-plugins/tmux-logging
+[submodule "tmux/plugins/tmux-sensible"]
+    path = tmux/plugins/tmux-sensible
+    url = https://github.com/tmux-plugins/tmux-sensible
