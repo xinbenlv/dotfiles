@@ -26,6 +26,8 @@ mv ~/.vimrc_vundle ~/dotfiles.bak
 ln -s ~/dotfiles/vimrc ~/.vimrc
 ln -s ~/dotfiles/vim ~/.vim
 ln -s ~/dotfiles/vimrc_vundle ~/.vimrc_vundle
+echo "Install vim plugins"
+vim +PluginInstall +qall
 
 echo "Set up screenrc"
 mv ~/.screenrc ~/dotfiles.bak
@@ -59,7 +61,6 @@ ln -s ~/dotfiles/gitignore ~/.gitignore
 echo "Finished."
 echo "You will need to install powerline-font yourself, we recommend DejaVuSansMono"
 echo "https://github.com/Lokaltog/powerline-fonts/tree/master/DejaVuSansMono"
-echo "You will need to launch vim and then do :PluginInstall to finish the vundle plugin installation"
 
 
 
