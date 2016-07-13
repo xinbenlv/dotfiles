@@ -22,8 +22,10 @@ ln -s ~/dotfiles/bashrc ~/.bash_profile
 echo "Set up vim"
 mv ~/.vimrc ~/dotfiles.bak
 mv ~/.vim ~/dotfiles.bak
+mv ~/.vimrc_vundle ~/dotfiles.bak
 ln -s ~/dotfiles/vimrc ~/.vimrc
 ln -s ~/dotfiles/vim ~/.vim
+ln -s ~/dotfiles/vimrc_vundle ~/.vimrc_vundle
 
 echo "Set up screenrc"
 mv ~/.screenrc ~/dotfiles.bak

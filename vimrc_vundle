@@ -1,0 +1,35 @@
+" Support for vundle
+set nocompatible " be iMproved
+filetype off " required!
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle
+" required!
+Plugin 'L9'
+
+" Grammar checker for English, French, German (etc.) in Vim
+" Bundle 'LanguageTool'
+
+"
+Plugin 'bling/vim-airline'
+
+" A git command wrapper for vim
+" Bundle 'tpope/vim-fugitive.git'
+
+" Nerdtree: file system browser
+Plugin 'scrooloose/nerdtree'
+" NERDTree and tabs together in Vim, painlessly
+
+" a bunch of colorschemes + a gui menu listing them
+Plugin 'flazz/vim-colorschemes'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'ColorSchemeMenuMaker'
+Plugin 'desert-warm-256'
+
+Plugin 'jceb/vim-orgmode'
+Plugin 'dart-lang/dart-vim-plugin'
+
+call vundle#end()            " required
+filetype plugin indent on    " required

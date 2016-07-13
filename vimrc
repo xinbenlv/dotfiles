@@ -1,7 +1,7 @@
 " Vim profile
 " Author: Zainan Victor Zhou
 " Created: 2012-10-02
-
+set shell=/bin/bash
 syntax on
 " TODO what's this
 set nocompatible
@@ -25,43 +25,7 @@ au Filetype znote source ~/.vim/scripts/znote.vim
 au BufRead,BufNewFile *.szl setfiletype szl
 au Filetype szl source ~/.vim/scripts/szl.vim
 
-
-" Support for vundle
-set nocompatible " be iMproved
-filetype off " required!
-
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" let Vundle manage Vundle
-" required! 
-Plugin 'gmarik/vundle'
-Plugin 'L9'
-
-" Grammar checker for English, French, German (etc.) in Vim
-" Bundle 'LanguageTool'
-
-" 
-Plugin 'bling/vim-airline'
-
-" A git command wrapper for vim
-" Bundle 'tpope/vim-fugitive.git'
-
-" Nerdtree: file system browser
-Plugin 'scrooloose/nerdtree' 
-" NERDTree and tabs together in Vim, painlessly
-
-" a bunch of colorschemes + a gui menu listing them
-Plugin 'flazz/vim-colorschemes'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'ColorSchemeMenuMaker'
-Plugin 'desert-warm-256'
-
-Plugin 'jceb/vim-orgmode'
-Plugin 'dart-lang/dart-vim-plugin'
-call vundle#end()            " required
-filetype plugin indent on    " required
-
+source ~/.vimrc_vundle
 
 " Set Dart SDK location"
 let g:ycm_dart_bin_folder_path = '/usr/lib/google-dartlang/bin'
