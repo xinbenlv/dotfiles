@@ -50,7 +50,7 @@ ln -s ~/dotfiles/emacs.d ~/.emacs.d
 echo "Set up git"
 mv ~/.gitconfig ~/.dotfiles.bak
 ln -s ~/dotfiles/gitconfig ~/.gitconfig
-mv ~/.gitignore ~/.gitignore
+mv ~/.gitignore ~/.gitignore.bak
 ln -s ~/dotfiles/gitignore ~/.gitignore
 
 
