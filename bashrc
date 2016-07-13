@@ -42,7 +42,7 @@ fi
 
 # File navigation aliases
 alias cd..='cd ..'
-alias ls='ls -hF -G'  # add colors for filetype recognition
+alias ls='ls -hF -G --color=auto'  # add colors for filetype recognition
 alias ll='ls -l -h'
 alias la='ls -A'
 alias du='du -kh' 
