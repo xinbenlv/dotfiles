@@ -43,6 +43,11 @@ ln -s ~/dotfiles/tmux-powerlinerc ~/.tmux-powerlinerc
 mv ~/.tmux ~/dotfiles.bak
 ln -s ~/dotfiles/tmux ~/.tmux
 
+# install tmux and tmuxinator 
+# TODO(zzn): find a way to handle sudo
+sudo apt-get install tmux
+sudo gem install tmuxinator
+
 echo "Set up emacs"
 mv ~/.emacs ~/dotfiles.bak
 ln -s ~/dotfiles/emacs ~/.emacs
