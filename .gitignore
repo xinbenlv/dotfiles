@@ -1,6 +1,6 @@
 # Vim cache
 vim/bundle
-
+!vim/bundle/Vundle.vim
 # Packages
 *.egg
 *.egg-info

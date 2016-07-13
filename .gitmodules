@@ -1,9 +1,6 @@
 [submodule "powerline-bash"]
     path = powerline-bash
     url = https://github.com/xinbenlv/powerline-bash.git
-[submodule "vim/bundle/Vundle.vim"]
-    path = vim/bundle/Vundle.vim
-    url = https://github.com/xinbenlv/Vundle.vim
 [submodule "tmux-powerline"]
     path = tmux-powerline
     url = https://github.com/xinbenlv/tmux-powerline.git
@@ -22,3 +19,6 @@
 [submodule "tmux/plugins/tmux-sensible"]
     path = tmux/plugins/tmux-sensible
     url = https://github.com/tmux-plugins/tmux-sensible
+[submodule "vim/bundle/Vundle.vim"]
+	path = vim/bundle/Vundle.vim
+	url = https://github.com/xinbenlv/Vundle.vim
