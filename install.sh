@@ -1,50 +1,53 @@
 #!/bin/bash
-echo "Start install dotfile, make sure you have git, vim, screen, tmux, tmuxinator in your machine already"
 
-echo "Git clone from Github"
-git clone https://github.com/xinbenlv/dotfiles.git ~/dotfiles
-echo "Set up submodules"
-cd ~/dotfiles
-git submodule init
-git submodule sync
-git submodule update
+DATE=$(date +"%Y%m%d%H%M%S")
+DOTFILES_DIR=~/dotfiles
+BACKUP_DIR=$DOTFILES_DIR.$DATE.bak
+echo "Execution at '$DATE'"
+# TODO move backup and link process to a sh function
+echo "Start installing dotfiles"
+echo "Assuming git, zsh, oh-my-zsh, tmux, tmuxinator, vim(compiled with python3) installed"
+command -v git
+command -v zsh
+command -v tmux
+command -v tmuxinator
+# TODO add check of these points
 
-echo "Backup old files to ~/dotfils.bak"
+if [ ! -e $DOTFILES_DIR ]; then
+  echo "Git cloning from Github"
+  git clone https://github.com/xinbenlv/dotfiles.git $DOTFILES_DIR
+else 
+  echo "Already have $DOTFILES_DIR cloned"
+fi
 
-mkdir ~/dotfiles.bak
+echo "Backing up old files to $BACKUP_DIR"
 
-echo "Set up bashrc"
-mv ~/.bashrc ~/dotfiles.bak
-ln -s ~/dotfiles/bashrc ~/.bashrc
-ln -s ~/dotfiles/bashrc ~/.bash_profile
+mkdir $BACKUP_DIR
 
 echo "Set up zshrc"
-mv ~/.zshrc ~/dotfiles.bak
-ln -s ~/dotfiles/zshrc ~/.zshrc
+mv ~/.zshrc $BACKUP_DIR
+ln -s $DOTFILES_DIR/zshrc ~/.zshrc
 
 echo "Set up powerline config"
-mv ~/.config ~/dotfiles.bak
-ln -s ~/dotfiles/config ~/.config
+if [ ! -e ~/.config ]; then
+  mkdir ~/.config
+fi
+mv ~/.config/powerline $BACKUP_DIR;
+ln -s $DOTFILES_DIR/powerline ~/.config/powerline
 
 echo "Set up vim"
-mv ~/.vimrc ~/dotfiles.bak
-mv ~/.vim ~/dotfiles.bak
-ln -s ~/dotfiles/vimrc ~/.vimrc
+mv ~/.vimrc $BACKUP_DIR
+ln -s $DOTFILES_DIR/vimrc ~/.vimrc
 
 echo "Set up tmux"
-mv ~/.tmux.conf ~/dotfiles.bak
-ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
-
-# install tmux and tmuxinator 
-# TODO(zzn): find a way to handle sudo
-# sudo apt-get install tmux
-# sudo gem install tmuxinator
+mv ~/.tmux.conf $BACKUP_DIR
+ln -s $DOTFILES_DIR/tmux.conf ~/.tmux.conf
 
 echo "Set up git"
-mv ~/.gitconfig ~/.dotfiles.bak
-ln -s ~/dotfiles/gitconfig ~/.gitconfig
-mv ~/.gitignore ~/.gitignore.bak
-ln -s ~/dotfiles/gitignore ~/.gitignore
+mv ~/.gitconfig $BACKUP_DIR
+ln -s $DOTFILES_DIR/gitconfig ~/.gitconfig
+mv ~/.gitignore $BACKUP_DIR
+ln -s $DOTFILES_DIR/gitignore ~/.gitignore
 
 echo "Finished."
 echo "You will need to install powerline-font yourself, we recommend DejaVuSansMono"

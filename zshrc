@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/zzn/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -102,16 +102,30 @@ export EDITOR=vi
 export PATH=$HOME/homebrew/bin:$PATH
 export LD_LIBRARY_PATH=$HOME/homebrew/lib:$LD_LIBRARY_PATH
 
+if [ -f ~/.zshrc_local ]; then
+  echo "sourcing .zshrc_local"
+  source ~/.zshrc_local
+else
+  echo "File .zshrc_local does not exist."
+fi
+
 # ---------- START OF POWERLINE ----------
+if [ -z "$POWERLINE_DIR" ]; then 
+  echo "POWERLINE_DIR is not set"; 
+else 
+  echo "POWERLINE_DIR is set to '$POWERLINE_DIR', initializing..."; 
+  export XDG_CONFIG_HOME=~/.config
+  powerline-daemon -q
+  # POWERLINE_BASH_CONTINUATION=1
+  # POWERLINE_BASH_SELECT=1
+  export POWERLINE_COMMAND=
+  export PROMPT_COMMAND=
+  export POWERLINE_DIR=/usr/local/google/home/zzn/.local/lib/python3.5/site-packages/powerline
+  . $POWERLINE_DIR/bindings/zsh/powerline.zsh
+
+fi
+
 # Related to powerline, TODO move to dotfile
-export XDG_CONFIG_HOME=~/.config
-powerline-daemon -q
-# POWERLINE_BASH_CONTINUATION=1
-# POWERLINE_BASH_SELECT=1
-export POWERLINE_COMMAND=
-export PROMPT_COMMAND=
-export POWERLINE_DIR=/Users/zzn/homebrew/lib/python3.6/site-packages/powerline
-. $POWERLINE_DIR/bindings/zsh/powerline.zsh
 # ---------- END OF POWERLINE ------------
 
-source ~/.zshrc_local
+
