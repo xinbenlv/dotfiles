@@ -120,7 +120,6 @@ else
   # POWERLINE_BASH_SELECT=1
   export POWERLINE_COMMAND=
   export PROMPT_COMMAND=
-  export POWERLINE_DIR=/usr/local/google/home/zzn/.local/lib/python3.5/site-packages/powerline
   . $POWERLINE_DIR/bindings/zsh/powerline.zsh
 
 fi

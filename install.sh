@@ -29,7 +29,7 @@ mv ~/.zshrc $BACKUP_DIR
 ln -s $DOTFILES_DIR/zshrc ~/.zshrc
 
 echo "Set up powerline config"
-if [ ! -e ~/.config ]; then
+if [ ! -d ~/.config ]; then
   mkdir ~/.config
 fi
 mv ~/.config/powerline $BACKUP_DIR;
