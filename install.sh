@@ -18,6 +18,10 @@ mv ~/.bashrc ~/dotfiles.bak
 ln -s ~/dotfiles/bashrc ~/.bashrc
 ln -s ~/dotfiles/bashrc ~/.bash_profile
 
+echo "Set up zshrc"
+mv ~/.zshrc ~/dotfiles.bak
+ln -s ~/dotfiles/zshrc ~/.zshrc
+
 echo "Set up vim"
 mv ~/.vimrc ~/dotfiles.bak
 mv ~/.vim ~/dotfiles.bak
@@ -25,9 +29,7 @@ ln -s ~/dotfiles/vimrc ~/.vimrc
 
 echo "Set up tmux"
 mv ~/.tmux.conf ~/dotfiles.bak
-mv ~/.tmuxinator ~/dotfiles.bak
 ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
-ln -s ~/dotfiles/tmuxinator ~/.tmuxinator
 
 # install tmux and tmuxinator 
 # TODO(zzn): find a way to handle sudo
@@ -43,6 +45,4 @@ ln -s ~/dotfiles/gitignore ~/.gitignore
 echo "Finished."
 echo "You will need to install powerline-font yourself, we recommend DejaVuSansMono"
 echo "https://github.com/Lokaltog/powerline-fonts/tree/master/DejaVuSansMono"
-
-
 
