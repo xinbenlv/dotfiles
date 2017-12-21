@@ -22,6 +22,10 @@ echo "Set up zshrc"
 mv ~/.zshrc ~/dotfiles.bak
 ln -s ~/dotfiles/zshrc ~/.zshrc
 
+echo "Set up powerline config"
+mv ~/.config ~/dotfiles.bak
+ln -s ~/dotfiles/config ~/.config
+
 echo "Set up vim"
 mv ~/.vimrc ~/dotfiles.bak
 mv ~/.vim ~/dotfiles.bak
