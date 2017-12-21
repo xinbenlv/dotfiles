@@ -33,8 +33,8 @@ ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
 
 # install tmux and tmuxinator 
 # TODO(zzn): find a way to handle sudo
-sudo apt-get install tmux
-sudo gem install tmuxinator
+# sudo apt-get install tmux
+# sudo gem install tmuxinator
 
 echo "Set up git"
 mv ~/.gitconfig ~/.dotfiles.bak
