@@ -35,7 +35,7 @@
     c = commit -am 'update'
 [core]
     editor = vim
-    excludesfile = /usr/local/google/home/zzn/.gitignore
+	excludesfile = ~/.gitignore
 [push]
     default = matching
 [merge]

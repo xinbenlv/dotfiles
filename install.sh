@@ -6,7 +6,8 @@ BACKUP_DIR=$DOTFILES_DIR.$DATE.bak
 echo "Execution at '$DATE'"
 # TODO move backup and link process to a sh function
 echo "Start installing dotfiles"
-echo "Assuming git, zsh, oh-my-zsh, tmux, tmuxinator, vim(compiled with python3) installed"
+echo "Assuming git, zsh, oh-my-zsh, tmux, tmuxinator, python3, python3-pip, powerline-status, vim(compiled with python3) installed"
+# https://gist.github.com/odiumediae/3b22d09b62e9acb7788baf6fdbb77cf8
 command -v git
 command -v zsh
 command -v tmux
@@ -52,4 +53,3 @@ ln -s $DOTFILES_DIR/gitignore ~/.gitignore
 echo "Finished."
 echo "You will need to install powerline-font yourself, we recommend DejaVuSansMono"
 echo "https://github.com/Lokaltog/powerline-fonts/tree/master/DejaVuSansMono"
-
