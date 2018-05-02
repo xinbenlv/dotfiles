@@ -24,11 +24,12 @@
                                 "function": "powerline.segments.shell.jobnum",
                                 "priority": 20
                         }
+
                 ],
                 "right": [
                         {
                                 "function": "powerline.segments.shell.last_pipe_status",
-                                "priority": 10
+                                "priority": 20
                         },
                         {
                                 "function": "powerline_gitstatus.gitstatus",
@@ -37,10 +38,6 @@
                                         "use_dash_c": false,
                                         "show_tag": true
                                 }
-                        },
-                        {
-                                "function": "powerline.segments.common.bat.battery",
-                                "priority": 40
                         },
                         {
                                 "function": "powerline.segments.common.time.date",

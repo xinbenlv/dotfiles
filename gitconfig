@@ -20,8 +20,8 @@
   untracked = cyan
 
 [user]
-    name = Zainan Victor Zhou
-    email = zzn@google.com
+	name = Zainan Victor Zhou
+	email = zzn@google.com
 
 [alias]
     ci = commit
@@ -38,11 +38,20 @@
 	excludesfile = ~/.gitignore
 [push]
     default = matching
-[merge]
-    tool = meld
 [diff]
-    tool = meld
-
+    tool = Kaleidoscope
+[difftool "Kaleidoscope"]
+  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[merge]
+    tool = Kaleidoscope
+[mergetool "Kaleidoscope"]
+  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+  trustExitCode = true
 
 [google]
     lastUpdateCheck = 20150601000000
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f

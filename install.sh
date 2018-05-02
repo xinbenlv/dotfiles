@@ -6,8 +6,19 @@ BACKUP_DIR=$DOTFILES_DIR.$DATE.bak
 echo "Execution at '$DATE'"
 # TODO move backup and link process to a sh function
 echo "Start installing dotfiles"
+
+
+# TODO: install ruby, rbenv
+# such as sudo apt-get install ruby,rbenv
+# TODO: install python3, python3-pip, powerline-status 
+# such as $ sudo apt-get install python3,python3-pip
+# TODO: intall python-vim
+
 echo "Assuming git, zsh, oh-my-zsh, tmux, tmuxinator, python3, python3-pip, powerline-status, vim(compiled with python3) installed"
 # https://gist.github.com/odiumediae/3b22d09b62e9acb7788baf6fdbb77cf8
+# https://gist.github.com/odiumediae/3b22d09b62e9acb7788baf6fdbb77cf8 and do check the python3.5 version to match with your version
+
+
 command -v git
 command -v zsh
 command -v tmux
@@ -49,6 +60,7 @@ mv ~/.gitconfig $BACKUP_DIR
 ln -s $DOTFILES_DIR/gitconfig ~/.gitconfig
 mv ~/.gitignore $BACKUP_DIR
 ln -s $DOTFILES_DIR/gitignore ~/.gitignore
+
 
 echo "Finished."
 echo "You will need to install powerline-font yourself, we recommend DejaVuSansMono"
