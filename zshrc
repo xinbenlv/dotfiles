@@ -93,7 +93,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
+alias ta="tmux a -d"
 echo 'sourcing ~/.zshrc_local'
 # Global stuff
 export PATH=$HOME/bin:$PATH
