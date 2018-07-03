@@ -14,6 +14,7 @@ echo "Start installing dotfiles"
 # sudo apt-get install python3
 # sudo apt install python3-pip
 # pip3 install powerline-status 
+# sudo apt install tmuxinator
 
 # TODO: install ruby, rbenv
 # such as sudo apt-get install ruby,rbenv
