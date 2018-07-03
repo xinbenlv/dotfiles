@@ -71,3 +71,4 @@ ln -s $DOTFILES_DIR/gitignore ~/.gitignore
 echo "Finished."
 echo "You will need to install powerline-font yourself, we recommend DejaVuSansMono"
 echo "https://github.com/Lokaltog/powerline-fonts/tree/master/DejaVuSansMono"
+echo "You also need to change to zsh by chsh -s `which zsh` and set up POWERLINE_DIR"
