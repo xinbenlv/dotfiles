@@ -7,11 +7,16 @@ echo "Execution at '$DATE'"
 # TODO move backup and link process to a sh function
 echo "Start installing dotfiles"
 
+# TODO install git
+# sudo apt-get install git
+# sodu apt-get install zsh
+# sudo apt-get install tmux 
+# sudo apt-get install python3
+# sudo apt install python3-pip
+# pip3 install powerline-status 
 
 # TODO: install ruby, rbenv
 # such as sudo apt-get install ruby,rbenv
-# TODO: install python3, python3-pip, powerline-status 
-# such as $ sudo apt-get install python3,python3-pip
 # TODO: intall python-vim
 
 echo "Assuming git, zsh, oh-my-zsh, tmux, tmuxinator, python3, python3-pip, powerline-status, vim(compiled with python3) installed"
