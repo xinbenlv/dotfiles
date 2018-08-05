@@ -34,4 +34,6 @@ https://github.com/Lokaltog/powerline-fonts/tree/master/DejaVuSansMono
 Licensed in MIT License, but I suggest everyone to create your own dotfiles
 
 
+## Tools to Install
+ - nvm
 
