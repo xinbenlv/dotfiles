@@ -20,10 +20,22 @@ echo "Start installing dotfiles"
 # such as sudo apt-get install ruby,rbenv
 # TODO: intall python-vim
 
+# Mac OS X
+# brew install git
+# brew install zsh
+# brew install tmux
+# brew install python3
+# brew install powerline-status
+# brew install ruby
+# brew install rbenv
+# brew install vim 
+
+#pip3 install powerline-gitstatus
+
 echo "Assuming git, zsh, oh-my-zsh, tmux, tmuxinator, python3, python3-pip, powerline-status, vim(compiled with python3) installed"
 # https://gist.github.com/odiumediae/3b22d09b62e9acb7788baf6fdbb77cf8
 # https://gist.github.com/odiumediae/3b22d09b62e9acb7788baf6fdbb77cf8 and do check the python3.5 version to match with your version
-
+# https://arophix.com/2018/01/24/install-vim-on-macos-high-sierra/ for mac
 
 command -v git
 command -v zsh
@@ -72,3 +84,6 @@ echo "Finished."
 echo "You will need to install powerline-font yourself, we recommend DejaVuSansMono"
 echo "https://github.com/Lokaltog/powerline-fonts/tree/master/DejaVuSansMono"
 echo "You also need to change to zsh by chsh -s `which zsh` and set up POWERLINE_DIR"
+echo "  set up POWERLINE_DIR by look it up with python -m site"
+echo "  e.g. python site-page/powerline" 
+
