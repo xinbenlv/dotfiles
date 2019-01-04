@@ -33,9 +33,14 @@ echo "Start installing dotfiles"
 #pip3 install powerline-gitstatus
 
 echo "Assuming git, zsh, oh-my-zsh, tmux, tmuxinator, python3, python3-pip, powerline-status, vim(compiled with python3) installed"
-# https://gist.github.com/odiumediae/3b22d09b62e9acb7788baf6fdbb77cf8
+
 # https://gist.github.com/odiumediae/3b22d09b62e9acb7788baf6fdbb77cf8 and do check the python3.5 version to match with your version
-# https://arophix.com/2018/01/24/install-vim-on-macos-high-sierra/ for mac
+
+
+# For mac install vim with python 3
+# brew remove vim
+# brew cleanup
+# brew install vim --with-python3
 
 command -v git
 command -v zsh
