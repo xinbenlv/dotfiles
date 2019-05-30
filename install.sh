@@ -7,46 +7,55 @@ echo "Execution at '$DATE'"
 # TODO move backup and link process to a sh function
 echo "Start installing dotfiles"
 
-# TODO install git
-# sudo apt-get install git
-# sodu apt-get install zsh
-# sudo apt-get install tmux 
-# sudo apt-get install python3
-# sudo apt install python3-pip
-# pip3 install powerline-status 
-# sudo apt install tmuxinator
 
-# TODO: install ruby, rbenv
-# such as sudo apt-get install ruby,rbenv
-# TODO: intall python-vim
+if [ "$(uname)" == "Darwin" ]; then
+    # Do something under Mac OS X platform
+    # Mac OS X
+    brew remove vim
+    brew cleanup
+    brew install vim --with-python3
 
-# Mac OS X
-# brew install git
-# brew install zsh
-# brew install tmux
-# brew install python3
-# brew install powerline-status
-# brew install ruby
-# brew install rbenv
-# brew install vim 
+    brew install git
+    brew install zsh
+    brew install tmux
+    brew install python3
+    cp /usr/local/bin/pip3 /usr/local/bin/pip
+    cp /usr/local/bin/python3 /usr/local/bin/python
 
-#pip3 install powerline-gitstatus
+    brew install ruby
+    brew install rbenv
+    brew install nvm
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+    # Do something under GNU/Linux platform
+    # TODO install git
+    echo "We haven't test the linux version"
+    #    sudo apt-get install git
+    #    sudo apt-get install zsh
+    #    sudo apt-get install tmux
+    #    sudo apt-get install python3
+    #    sudo apt install python3-pip
+    #    sudo apt-get install ruby,rbenv
+    #    # TODO: install python-vim
+    # https://gist.github.com/odiumediae/3b22d09b62e9acb7788baf6fdbb77cf8 and do check the python3.5 version to match with your version
+
+fi
+
+
+pip install powerline-status
+pip install powerline-gitstatus
 
 echo "Assuming git, zsh, oh-my-zsh, tmux, tmuxinator, python3, python3-pip, powerline-status, vim(compiled with python3) installed"
-
-# https://gist.github.com/odiumediae/3b22d09b62e9acb7788baf6fdbb77cf8 and do check the python3.5 version to match with your version
-
-
-# For mac install vim with python 3
-# brew remove vim
-# brew cleanup
-# brew install vim --with-python3
 
 command -v git
 command -v zsh
 command -v tmux
-command -v tmuxinator
+command -v ruby
+command -v node
+command -v nvm
 # TODO add check of these points
+
+nvm install node
+nvm alias default stable
 
 if [ ! -e $DOTFILES_DIR ]; then
   echo "Git cloning from Github"
