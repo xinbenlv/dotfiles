@@ -29,20 +29,20 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     # Do something under GNU/Linux platform
     # TODO install git
     echo "We haven't test the linux version"
-    #    sudo apt-get install git
-    #    sudo apt-get install zsh
-    #    sudo apt-get install tmux
-    #    sudo apt-get install python3
-    #    sudo apt install python3-pip
-    #    sudo apt-get install ruby,rbenv
-    #    # TODO: install python-vim
+    sudo apt-get install git
+    sudo apt-get install zsh
+    sudo apt-get install tmux
+    sudo apt-get install python3
+    sudo apt install python3-pip
+    sudo apt-get install ruby,rbenv
+    # install python-vim
     # https://gist.github.com/odiumediae/3b22d09b62e9acb7788baf6fdbb77cf8 and do check the python3.5 version to match with your version
 
 fi
 
 
-pip install powerline-status
-pip install powerline-gitstatus
+pip3 install powerline-status
+pip3 install powerline-gitstatus
 
 echo "Assuming git, zsh, oh-my-zsh, tmux, tmuxinator, python3, python3-pip, powerline-status, vim(compiled with python3) installed"
 
@@ -99,5 +99,5 @@ echo "You will need to install powerline-font yourself, we recommend DejaVuSansM
 echo "https://github.com/Lokaltog/powerline-fonts/tree/master/DejaVuSansMono"
 echo "You also need to change to zsh by chsh -s `which zsh` and set up POWERLINE_DIR"
 echo "  set up POWERLINE_DIR by look it up with python -m site"
-echo "  e.g. python site-page/powerline" 
+echo "  e.g. python3 -m site-page/powerline" 
 
