@@ -22,6 +22,7 @@
 [user]
 	name = Zainan Victor Zhou
 	email = zzn@zzn.im
+	signingkey = EB6D5CAEFF3B37D77C7B1B45323F822777ED8930
 
 [alias]
     ci = commit
@@ -33,6 +34,8 @@
     wdiff = diff --color-words
     s = status --ignore
     c = commit -am 'update'
+	jlog = log -20 --pretty=format:\"%ci  %Cgreen%h%Creset  %s\"
+	l = log --graph --pretty=format:'%Cblue%ai - %Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [core]
     editor = vim
 	excludesfile = ~/.gitignore
@@ -55,3 +58,7 @@
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg
