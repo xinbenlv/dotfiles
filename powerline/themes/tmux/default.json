@@ -1,5 +1,9 @@
 {
     "segments": {
+        "left": [ 
+            {
+                "function": "powerline.segments.common.sys.cpu_load_percent"
+            }],
         "right": [
             {   
                 "function": "powerline.segments.common.time.date"

@@ -34,11 +34,11 @@
     wdiff = diff --color-words
     s = status --ignore
     c = commit -am 'update'
-	jlog = log -20 --pretty=format:\"%ci  %Cgreen%h%Creset  %s\"
+	jlog = log -5000 --pretty=format:\"%ci  %Cgreen%h%Creset  %s\"
 	l = log --graph --pretty=format:'%Cblue%ai - %Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [core]
     editor = vim
-	excludesfile = ~/.gitignore
+	excludesfile = /Users/zzn/.gitignore
 [push]
     default = matching
 [diff]
@@ -59,6 +59,12 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 [commit]
-	gpgsign = true
+	gpgsign = false
 [gpg]
 	program = gpg
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Users/zzn/Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

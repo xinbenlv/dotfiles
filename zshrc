@@ -131,3 +131,5 @@ fi
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completionexport PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="/usr/local/opt/mysql-client/bin:$PATH"
+[[ -e ~/mdproxy/mdproxy_zshrc ]] && source ~/mdproxy/mdproxy_zshrc # MDPROXY-ZSHRC
