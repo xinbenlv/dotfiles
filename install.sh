@@ -29,6 +29,7 @@ if [ "$(uname)" == "Darwin" ]; then
     brew install node
     brew install yarn
     brew install nvm
+    
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     # Do something under GNU/Linux platform
     # TODO install git
@@ -43,6 +44,12 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
 
 fi
 
+
+sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"  # install oh-my-zsh
+
+# install oh-my-zsh related plugins
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k # install powerlevel10k
+git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
 
 echo "Assuming git, zsh, oh-my-zsh, tmux, tmuxinator, vim(compiled with python3) installed"
 
@@ -71,6 +78,9 @@ mkdir $BACKUP_DIR
 echo "Set up zshrc"
 mv ~/.zshrc $BACKUP_DIR
 ln -s $DOTFILES_DIR/zshrc ~/.zshrc
+
+mv ~/.p10k.zsh $BACKUP_DIR
+ln -s $DOTFILES_DIR/p10k.zsh ~/.p10k.zsh
 
 echo "Set up vim"
 mv ~/.vimrc $BACKUP_DIR
