@@ -11,19 +11,23 @@ echo "Start installing dotfiles"
 if [ "$(uname)" == "Darwin" ]; then
     # Do something under Mac OS X platform
     # Mac OS X
+    
+    ## install brew
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
     brew remove vim
     brew cleanup
-    brew install vim --with-python3
+    brew install macvim
 
     brew install git
     brew install zsh
     brew install tmux
-    brew install python3
-    cp /usr/local/bin/pip3 /usr/local/bin/pip
-    cp /usr/local/bin/python3 /usr/local/bin/python
 
-    brew install ruby
-    brew install rbenv
+    # brew install ruby
+    # brew install rbenv
+    # brew install nvm
+    brew install node
+    brew install yarn
     brew install nvm
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     # Do something under GNU/Linux platform
@@ -32,24 +36,20 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     sudo apt-get install git
     sudo apt-get install zsh
     sudo apt-get install tmux
-    sudo apt-get install python3
-    sudo apt install python3-pip
-    sudo apt-get install ruby,rbenv
+    sudo apt-get install node,nvm,yarn
+    # sudo apt-get install ruby,rbenv
     # install python-vim
     # https://gist.github.com/odiumediae/3b22d09b62e9acb7788baf6fdbb77cf8 and do check the python3.5 version to match with your version
 
 fi
 
 
-pip3 install powerline-status
-pip3 install powerline-gitstatus
-
-echo "Assuming git, zsh, oh-my-zsh, tmux, tmuxinator, python3, python3-pip, powerline-status, vim(compiled with python3) installed"
+echo "Assuming git, zsh, oh-my-zsh, tmux, tmuxinator, vim(compiled with python3) installed"
 
 command -v git
 command -v zsh
 command -v tmux
-command -v ruby
+# command -v ruby
 command -v node
 command -v nvm
 # TODO add check of these points
@@ -72,13 +72,6 @@ echo "Set up zshrc"
 mv ~/.zshrc $BACKUP_DIR
 ln -s $DOTFILES_DIR/zshrc ~/.zshrc
 
-echo "Set up powerline config"
-if [ ! -d ~/.config ]; then
-  mkdir ~/.config
-fi
-mv ~/.config/powerline $BACKUP_DIR;
-ln -s $DOTFILES_DIR/powerline ~/.config/powerline
-
 echo "Set up vim"
 mv ~/.vimrc $BACKUP_DIR
 ln -s $DOTFILES_DIR/vimrc ~/.vimrc
@@ -97,7 +90,4 @@ ln -s $DOTFILES_DIR/gitignore ~/.gitignore
 echo "Finished."
 echo "You will need to install powerline-font yourself, we recommend DejaVuSansMono"
 echo "https://github.com/Lokaltog/powerline-fonts/tree/master/DejaVuSansMono"
-echo "You also need to change to zsh by chsh -s `which zsh` and set up POWERLINE_DIR"
-echo "  set up POWERLINE_DIR by look it up with python -m site"
-echo "  e.g. python3 -m site-page/powerline" 
 

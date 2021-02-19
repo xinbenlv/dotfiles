@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -61,6 +68,7 @@ export ZSH=~/.oh-my-zsh
 plugins=(
   git
   history
+  wd
 )
 
 # source $ZSH/oh-my-zsh.sh
@@ -110,26 +118,6 @@ else
   echo "File .zshrc_local does not exist."
 fi
 
-# ---------- START OF POWERLINE ----------
-if [ -z "$POWERLINE_DIR" ]; then 
-  echo "POWERLINE_DIR is not set"; 
-else 
-  echo "POWERLINE_DIR is set to '$POWERLINE_DIR', initializing..."; 
-  export XDG_CONFIG_HOME=~/.config
-  powerline-daemon -q
-  # POWERLINE_BASH_CONTINUATION=1
-  # POWERLINE_BASH_SELECT=1
-  export POWERLINE_COMMAND=
-  export PROMPT_COMMAND=
-  . $POWERLINE_DIR/bindings/zsh/powerline.zsh
-
-fi
-
-# Related to powerline, TODO move to dotfile
-# ---------- END OF POWERLINE ------------
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completionexport PATH="/usr/local/opt/ruby/bin:$PATH"
-export PATH="/usr/local/opt/mysql-client/bin:$PATH"
-[[ -e ~/mdproxy/mdproxy_zshrc ]] && source ~/mdproxy/mdproxy_zshrc # MDPROXY-ZSHRC
+wd() {
+  . /Users/zzn/bin/wd/wd.sh
+}

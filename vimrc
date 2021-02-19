@@ -15,12 +15,6 @@ filetype plugin on
 
 filetype plugin indent on " required!
 
-" Setup for powerline
-python3 from powerline.vim import setup as powerline_setup
-python3 powerline_setup()
-python3 del powerline_setup
-set laststatus=2
-
 set paste
 " source additional source
 if filereadable(glob("~/.vimrc_local"))
