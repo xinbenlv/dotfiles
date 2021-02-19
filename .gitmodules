@@ -22,6 +22,3 @@
 [submodule "vim/bundle/Vundle.vim"]
 	path = vim/bundle/Vundle.vim
 	url = https://github.com/xinbenlv/Vundle.vim
-[submodule "ohmyzsh"]
-	path = oh-my-zsh
-	url = https://github.com/ohmyzsh/ohmyzsh.git
