@@ -74,6 +74,8 @@ plugins=(
   wd
   zsh-autosuggestions
   history-substring-search
+  
+  # this one needs to be last one
   zsh-syntax-highlighting
 )
 
