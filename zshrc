@@ -72,6 +72,9 @@ plugins=(
   git
   history
   wd
+  zsh-autosuggestions
+  history-substring-search
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
