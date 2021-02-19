@@ -74,7 +74,7 @@ plugins=(
   wd
 )
 
-# source $ZSH/oh-my-zsh.sh
+source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
